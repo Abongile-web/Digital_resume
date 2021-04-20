@@ -9,6 +9,10 @@ html {
   scroll-behavior: smooth;
 }
 
+h1 {
+  font-size: 50px;
+}
+
 .container {
   background: -webkit-gradient(linear, left bottom, right top, from(#cfd9df), to(#e2ebf0));
   background: linear-gradient(to right top, #cfd9df, #e2ebf0);
@@ -139,6 +143,11 @@ html {
 
 .container .container2 .content .landing-page button:hover {
   background-color: #beccd5;
+}
+
+.container .container2 .content .about-page {
+  width: 90%;
+  color: #3a3a3a;
 }
 
 .container .circle1,
