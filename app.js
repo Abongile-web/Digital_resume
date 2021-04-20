@@ -13,16 +13,14 @@
 let homeLink = document.querySelector('#home-link');
 
 homeLink.addEventListener('mouseover', () => {
-    homeLink.style.animationDelay = '0s';
-    homeLink.classList.replace('fadeIn','headShake');
+    homeLink.classList.add('pulse');
 
     console.log(homeLink);
        
 })
 
 homeLink.addEventListener('mouseout', () => {
-    homeLink.style.animationIterationCount = '1';
-    homeLink.classList.replace('headShake','fadeIn');
+    homeLink.classList.remove('pulse');
 
     console.log(homeLink);
 })
@@ -32,27 +30,23 @@ homeLink.addEventListener('mouseout', () => {
 let aboutLink = document.querySelector('#about-link');
 
 aboutLink.addEventListener('mouseover', () => {
-    aboutLink.style.animationDelay = '0s';
-    aboutLink.classList.replace('fadeIn','headShake');
+    aboutLink.classList.add('pulse');
 })
 
 aboutLink.addEventListener('mouseout', () => {
-    aboutLink.style.animationIterationCount = '1';
-    aboutLink.classList.replace('headShake','fadeIn');
+    aboutLink.classList.remove('pulse');
 })
 
-//experience page
+// experience page
 
 let experienceLink = document.querySelector('#experience-link');
 
 experienceLink.addEventListener('mouseover', () => {
-    experienceLink.style.animationDelay = '0s';
-    experienceLink.classList.replace('fadeIn','headShake');
+    experienceLink.classList.add('pulse');
 })
 
 experienceLink.addEventListener('mouseout', () => {
-    experienceLink.style.animationIterationCount = '1';
-    experienceLink.classList.replace('headShake','fadeIn');
+    experienceLink.classList.remove('pulse');
 })
 
 // projects page
@@ -60,26 +54,34 @@ experienceLink.addEventListener('mouseout', () => {
 let projectsLink = document.querySelector('#projects-link');
 
 projectsLink.addEventListener('mouseover', () => {
-    projectsLink.style.animationDelay = '0s';
-    projectsLink.classList.replace('fadeIn','headShake');
+    projectsLink.classList.add('pulse');
 })
 
 projectsLink.addEventListener('mouseout', () => {
-    projectsLink.style.animationIterationCount = '1';
-    projectsLink.classList.replace('headShake','fadeIn');
+    projectsLink.classList.remove('pulse');
 })
 
-// Contact
+// Contact page
 
 let ContactLink = document.querySelector('#contact-link');
 
 ContactLink.addEventListener('mouseover', () => {
-    ContactLink.style.animationDelay = '0s';
-    ContactLink.classList.replace('fadeIn','headShake');
+    ContactLink.classList.add('pulse');
 })
 
 ContactLink.addEventListener('mouseout', () => {
-    ContactLink.style.animationIterationCount = '1';
-    ContactLink.classList.replace('headShake','fadeIn');
+    ContactLink.classList.remove('pulse');
+})
+
+// Blog Page
+
+let blogLink = document.querySelector('#blog-link');
+
+blogLink.addEventListener('mouseover', () => {
+    blogLink.classList.add('pulse');
+})
+
+blogLink.addEventListener('mouseout', () => {
+    blogLink.classList.remove('pulse');
 })
 
