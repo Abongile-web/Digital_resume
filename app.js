@@ -85,3 +85,71 @@ blogLink.addEventListener('mouseout', () => {
     blogLink.classList.remove('pulse');
 })
 
+
+
+
+
+
+// Navigation functionality 
+//About link
+
+document.querySelector('#about-link').addEventListener('click', () => {
+    document.querySelector('.landing-page').style.display = 'none';
+    document.querySelector('.experience-page').style.display = 'none';
+    document.querySelector('.projects-page').style.display = 'none';
+    document.querySelector('.contact-page').style.display = 'none';
+
+    document.querySelector('.about-page').style.display = 'flex';
+})
+
+//Experience link
+document.querySelector('#experience-link').addEventListener('click', () => {
+    document.querySelector('.landing-page').style.display = 'none';
+    document.querySelector('.about-page').style.display = 'none';
+    document.querySelector('.projects-page').style.display = 'none';
+    document.querySelector('.contact-page').style.display = 'none';
+
+    document.querySelector('.experience-page').style.display = 'block';
+})
+
+//Projects link
+document.querySelector('#projects-link').addEventListener('click', () => {
+    document.querySelector('.landing-page').style.display = 'none';
+    document.querySelector('.about-page').style.display = 'none';
+    document.querySelector('.experience-page').style.display = 'none';
+    document.querySelector('.contact-page').style.display = 'none';
+
+    document.querySelector('.projects-page').style.display = 'block';
+})
+
+//Contact link
+document.querySelector('#contact-link').addEventListener('click', () => {
+    document.querySelector('.landing-page').style.display = 'none';
+    document.querySelector('.about-page').style.display = 'none';
+    document.querySelector('.experience-page').style.display = 'none';
+    document.querySelector('.projects-page').style.display = 'none';
+
+    document.querySelector('.contact-page').style.display = 'block';
+})
+
+//Home link
+document.querySelector('#home-link').addEventListener('click', () => {
+    document.querySelector('.contact-page').style.display = 'none';
+    document.querySelector('.about-page').style.display = 'none';
+    document.querySelector('.experience-page').style.display = 'none';
+    document.querySelector('.projects-page').style.display = 'none';
+
+    document.querySelector('.landing-page').style.display = 'block';
+})
+
+
+
+//See my work button 
+document.querySelector('.landing-page button').addEventListener('click', () => {
+    document.querySelector('.landing-page').style.display = 'none';
+    document.querySelector('.about-page').style.display = 'none';
+    document.querySelector('.experience-page').style.display = 'none';
+    document.querySelector('.contact-page').style.display = 'none';
+
+    document.querySelector('.projects-page').style.display = 'block';
+})
