@@ -161,6 +161,7 @@ h1 {
 
 .container .container2 .content .experience-page {
   width: 90%;
+  color: #3a3a3a;
 }
 
 .container .container2 .content .experience-page .skills {
@@ -170,6 +171,11 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.container .container2 .content .experience-page .skills ul li {
+  list-style: none;
+  padding-bottom: 5px;
 }
 
 .container .circle1,
