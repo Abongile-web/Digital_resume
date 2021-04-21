@@ -148,6 +148,28 @@ h1 {
 .container .container2 .content .about-page {
   width: 90%;
   color: #3a3a3a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .container2 .content .about-page img {
+  width: 30%;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.container .container2 .content .experience-page {
+  width: 90%;
+}
+
+.container .container2 .content .experience-page .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .container .circle1,
