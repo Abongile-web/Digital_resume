@@ -7,6 +7,11 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow: hidden;
 }
 
 h1 {
@@ -41,6 +46,10 @@ h1 {
   z-index: 99;
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
+}
+
+.container .container2 div.menu {
+  display: none;
 }
 
 .container .container2 .dashboard {
@@ -163,6 +172,8 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .container .container2 .content .about-page img {
@@ -184,6 +195,8 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .container .container2 .content .experience-page .skills ul li {
@@ -271,6 +284,8 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .container .container2 .content .contact-page .text form {
@@ -291,7 +306,7 @@ h1 {
 .container .container2 .content .contact-page .text form label {
   text-align: left;
   padding: 20px 20px 20px 5px;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .container .container2 .content .contact-page .text form label input {
@@ -351,5 +366,94 @@ h1 {
   top: 5%;
   width: 200px;
   height: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container .container2 {
+    width: 100vw;
+    min-height: 100vh;
+    border-radius: 0;
+  }
+  .container .container2 div.menu {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 5vh;
+    background-color: transparent;
+    color: #3a3a3a;
+    z-index: 100;
+  }
+  .container .container2 div.menu img {
+    width: 20px;
+  }
+  .container .container2 .dashboard {
+    position: absolute;
+    width: 80%;
+    min-height: 100vh;
+    z-index: 105;
+    background-color: white;
+    border-radius: 0;
+  }
+  .container .container2 .content {
+    text-align: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .container .container2 .content .landing-page h1 {
+    font-size: 40px;
+  }
+  .container .container2 .content .about-page {
+    width: 100vw;
+    padding: 40px 20px;
+  }
+  .container .container2 .content .experience-page {
+    width: 100vw;
+    padding: 40px 10px;
+  }
+  .container .container2 .content .experience-page .skills {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .container2 .content .experience-page .skills svg {
+    width: 200px;
+  }
+  .container .container2 .content .projects-page {
+    width: 100vw;
+    padding: 40px 0;
+  }
+  .container .container2 .content .projects-page .project-cards .projects #block {
+    margin: 10px auto;
+  }
+  .container .container2 .content .contact-page {
+    padding: 40px 0;
+  }
+  .container .container2 .content .contact-page .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .container .container2 .content .contact-page .text form {
+    width: 100vw;
+    padding: 10px;
+  }
+  .container .container2 .content .contact-page .text svg {
+    width: 200px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

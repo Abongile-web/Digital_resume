@@ -91,6 +91,15 @@ blogLink.addEventListener('mouseout', () => {
 
 
 // Navigation functionality 
+
+
+
+let menu = true;
+let bars = document.querySelector('div.menu i');
+let dashBoard = document.querySelector('.dashboard');
+
+
+
 //About link
 
 document.querySelector('#about-link').addEventListener('click', () => {
@@ -100,6 +109,9 @@ document.querySelector('#about-link').addEventListener('click', () => {
     document.querySelector('.contact-page').style.display = 'none';
 
     document.querySelector('.about-page').style.display = 'flex';
+
+    menu = false;
+    dashBoard.style.display = 'none';
 })
 
 //Experience link
@@ -110,6 +122,9 @@ document.querySelector('#experience-link').addEventListener('click', () => {
     document.querySelector('.contact-page').style.display = 'none';
 
     document.querySelector('.experience-page').style.display = 'block';
+
+    menu = false;
+    dashBoard.style.display = 'none';
 })
 
 //Projects link
@@ -120,6 +135,9 @@ document.querySelector('#projects-link').addEventListener('click', () => {
     document.querySelector('.contact-page').style.display = 'none';
 
     document.querySelector('.projects-page').style.display = 'block';
+
+    menu = false;
+    dashBoard.style.display = 'none';
 })
 
 //Contact link
@@ -130,6 +148,9 @@ document.querySelector('#contact-link').addEventListener('click', () => {
     document.querySelector('.projects-page').style.display = 'none';
 
     document.querySelector('.contact-page').style.display = 'block';
+
+    menu = false;
+    dashBoard.style.display = 'none';
 })
 
 //Home link
@@ -140,6 +161,9 @@ document.querySelector('#home-link').addEventListener('click', () => {
     document.querySelector('.projects-page').style.display = 'none';
 
     document.querySelector('.landing-page').style.display = 'block';
+
+    menu = false;
+    dashBoard.style.display = 'none';
 })
 
 
@@ -152,4 +176,32 @@ document.querySelector('.landing-page button').addEventListener('click', () => {
     document.querySelector('.contact-page').style.display = 'none';
 
     document.querySelector('.projects-page').style.display = 'block';
+})
+
+
+//toggle navigation in mobile view
+
+bars.addEventListener('click', () => {
+    menu = !menu;
+    console.log(menu);
+
+    if (menu == true) {
+        
+        document.querySelector('.dashboard').classList.add('fadeInLeft');
+        document.querySelector('.dashboard').style.display = 'flex';
+    } else {
+        document.querySelector('.dashboard').style.display = 'none';
+    }
+})
+
+document.querySelector('div.menu img').addEventListener('click', () => {
+    document.querySelector('.contact-page').style.display = 'none';
+    document.querySelector('.about-page').style.display = 'none';
+    document.querySelector('.experience-page').style.display = 'none';
+    document.querySelector('.projects-page').style.display = 'none';
+
+    document.querySelector('.landing-page').style.display = 'block';
+
+    menu = false;
+    dashBoard.style.display = 'none';
 })
