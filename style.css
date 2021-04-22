@@ -176,9 +176,24 @@ h1 {
       flex-wrap: wrap;
 }
 
+.container .container2 .content .about-page .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
 .container .container2 .content .about-page img {
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   padding: 20px;
 }
@@ -421,6 +436,11 @@ h1 {
   .container .container2 .content .about-page {
     width: 100vw;
     padding: 40px 20px;
+  }
+  .container .container2 .content .about-page .heading {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .container .container2 .content .experience-page {
     width: 100vw;
