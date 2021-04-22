@@ -330,6 +330,11 @@ h1 {
       }
 
       .dashboard {
+        display: none;
+      }
+
+      .dashboard-mobile {
+        display: flex;
         position: absolute;
         width: 80%;
         min-height: 100vh;
